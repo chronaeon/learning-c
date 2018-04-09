@@ -39,19 +39,6 @@ int main()
 }
 ```
 
-### "Hello, World!" in C++
-
-```
-#include <iostream>
-
-int main() 
-{
-    std::cout << "Hello, World!";
-}
-```
-
-At face value, it's hard to see a problem. The programs seem almost identical with just slightly different syntax. But this is why high-level abstractions can be so misleading. We can get a better look into the machine-level by viewing the assembly code for each program.
-
 #### Helloworld.c Assembly
 
 ```
@@ -82,6 +69,19 @@ main:
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 7.2.0-8ubuntu3.2) 7.2.0"
 	.section	.note.GNU-stack,"",@progbits
+```
+
+It makes sense that the assembly code for a C program would be longer than code itself, after all that's the point of having these high-level languages is to make it so we don't have to read all of that assembly just to write a program. We might expect the C++ code to be a little longer in assembly, but we'd expect each language is optimized to not use more assembly than necessary when compiling. Let's take a look at the same program in C++.
+
+### "Hello, World!" in C++
+
+```
+#include <iostream>
+
+int main() 
+{
+    std::cout << "Hello, World!";
+}
 ```
 
 #### Helloworld.cpp Assembly
