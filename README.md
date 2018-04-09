@@ -8,23 +8,25 @@ I've decided to become a C developer, because C most fits the needs I have for p
 2. C gives developers the greatest amount of control over the machine at the cost of being more time-consuming to develop software in.
 3. C encourages applications suited to highly specific requirements.
 4. C avails itself to compiling programs that work on non-standard architectures, such as embedded systems.
-5. C sidesteps the problem of imperative vs. functional languages, by forcing the developer to make this decision. Although feels natural to write imperative code in C, functional code can still be written if the developer deems it necessary and puts in the extra work. This is sensible, because computers are not merely language describing actions or math describing functions. A bit is not functional, but imperative. A bit simply is. But it can be described mathematically and functionally when working with combinations of other bits together. Neither mere imperative statements nor mere functional declarations are sufficient to explain everything happening at the machine level., but the whole point of software development is to get something to happen at the machine level. It makes sense, then, that the language will be most powerful which can posit both types of interactions and compile them to work on the machine in either a functional or an imperative way, depending on the needs of the situation. 
+5. C sidesteps the problem of imperative vs. functional languages, by forcing the developer to make this decision. 
+
+Although it can feel easy and natural to write imperative code in C, functional code can still be written if the developer deems it necessary and puts in the extra work. This is sensible, because computers are not merely language describing actions or math describing functions. A bit is not functional, but imperative. A bit simply is. But it can be described mathematically and through more complex functions when working with combinations of other bits together. However, neither mere imperative statements nor mere functional declarations are sufficient to explain everything happening at the machine level. But the whole point of software development is to get something specific to happen at the machine level. It makes sense, then, that the language will be most powerful which can posit both types of interactions and compile them to work on the machine in either a functional or an imperative way, or a combination of the two, depending on the needs of the situation. 
 
  
 ## Dictums
 
 1. A program is a set of instructions that a computer can follow. The goal of developing software is to write the best possible program(s) for a given (set of) application(s). C is my language of choice because it brings the stringent developer closest to approximating that reality.
-2. To the extent that a computer is "ordered around" by software, all programming languages eventually compile to some form of bytecode that the computer can understand.
+2. To the extent that a computer is "ordered around" by software, all programming languages (regardless of their paradigm,) ultimately compile to some form of bytecode that the computer can understand.
 3. To the extent that a particular programming language utilizes abstractions that allow for shortcuts will any software written in that language inherit the biases and blind-spots of the paradigm(s) of that language.
-4. Any high-level language replaces a person's natural interaction with the machine with a set of abstractions that are not chosen by the developer, but by the language(s) author(s).
-5. To the extent that machine operations are abstracted away from the developer will the developer inherit the paradigm not of the machine, but of the abstractions that make up the language they code in.
-6. This contributes to the problem of dogmatic attitudes among developers that certain languages are bad, and other ones are good (even when there's just as many developers that would switch preferences.)
-7. Talking through a high level language is like talking through a translator. The best translator will give you the most latitude and greatest specificity with what you say. C does this.
-8. If you only talk through a translator but never learn the native language, you do yourself and your understanding of computers a measurable disservice.
+4. Any high-level programming language replaces a developer's naturally-forming interaction with the machine with a set of abstractions that are not chosen by the developer, but by the language's author(s).
+5. To the extent that machine operations are abstracted away from the developer will the developer inherit the paradigm not of the machine, but of the abstractions comprising whatever language they write their code in.
+6. This contributes to the problem of dogmatic attitudes among developers that certain languages are bad, and other ones are good (even when there's just as many developers that publicly and vocally would switch preferences.)
+7. Talking to a computer through a high level language is like talking through a translator. The best translator will give you the most latitude and greatest specificity with what you say. 
+8. To fully and satisfactorily understand computers and what they can do, one must strive to understand their native language (binary.)
 
 ## Purpose
 
-The goal of this repository is for me to learn C and show the world what it can do. Although I've combed through much code over the years, and learned many languages briefly (and usually just for the sake of curiosity,) the only language I've ever wanted to master is C. Maybe it's because of the best-in-class software written in C (Unix, VIm, etc.) Or maybe it's because C doesn't allow me to take shortcuts where I don't have to code as much but the computer uses more resources, but I prefer to be thorough. Sometimes a picture is worth a thousand words, so let's compare a "Hello, World!" program written in C with one written in C++ and see if we can learn something.
+The goal of this repository is for me to learn C and show the world what it can do. Although I've combed through much code over the years, and learned many languages briefly (and usually just for the sake of curiosity,) the only language I've ever wanted to master is C. Maybe it's because of the best-in-class software written in C (Unix, VIm, etc.) Or maybe it's because C doesn't allow me to take shortcuts, but I prefer to be thorough. Sometimes a picture is worth a thousand words, so let's compare a "Hello, World!" program written in C with one written in C++ and see if we can learn something.
 
 ### "Hello, World!" in C
 
