@@ -35,7 +35,7 @@ The goal of this repository is for me to learn C and show the world what it can 
 
 int main()
 {
-    printf("Hello, world!\n");   
+    printf("Hello, World!");   
 }
 ```
 
@@ -48,7 +48,7 @@ int main()
 }
 ```
 
-At face value, this looks pretty innocuous, doesn't it? C++ seems as though it might make even more sense to code in. But let's see what's happening at the machine level, shall we?
+At face value, this looks pretty innocuous, the programs seem almost identical with just slightly different syntax. We can get a better look into the machine-level by viewing the assembly code for each program. 
 
 #### Helloworld.c Assembly
 
@@ -56,7 +56,7 @@ At face value, this looks pretty innocuous, doesn't it? C++ seems as though it m
 	.file	"helloworld.c"
 	.section	.rodata
 .LC0:
-	.string	"Hello, world!"
+	.string	"Hello, World!"
 	.text
 	.globl	main
 	.type	main, @function
