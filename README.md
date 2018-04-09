@@ -19,10 +19,10 @@ Although it can feel easy and natural to write imperative code in C, functional 
 2. To the extent that a computer is "ordered around" by software, all programming languages (regardless of their paradigm,) ultimately compile to some form of bytecode that the computer can understand.
 3. To the extent that a particular programming language utilizes abstractions that allow for shortcuts will any software written in that language inherit the biases and blind-spots of the paradigm(s) of that language.
 4. Any high-level programming language replaces a developer's naturally-forming interaction with the machine with a set of abstractions that are not chosen by the developer, but by the language's author(s).
-5. To the extent that machine operations are abstracted away from the developer will the developer inherit the paradigm not of the machine, but of the abstractions comprising whatever language they write their code in.
+5. To the extent that machine operations are abstracted away from the developer will the developer inherit the paradigm not of the machine, but of the language they primarily code in.
 6. This contributes to the problem of dogmatic attitudes among developers that certain languages are bad, and other ones are good (even when there's just as many developers that publicly and vocally would switch preferences.)
 7. Talking to a computer through a high level language is like talking through a translator. The best translator will give you the most latitude and greatest specificity with what you say. 
-8. To fully and satisfactorily understand computers and what they can do, one must strive to understand their native language (binary.)
+8. For a human to truly interface with a computer, a significant effort should be made to understand their native language, (binary,) and not other human's high-level interpretations of binary.
 
 ## Purpose
 
@@ -42,13 +42,15 @@ int main()
 ### "Hello, World!" in C++
 
 ```
+#include <iostream>
+
 int main() 
 {
     std::cout << "Hello, World!";
 }
 ```
 
-At face value, this looks pretty innocuous, the programs seem almost identical with just slightly different syntax. We can get a better look into the machine-level by viewing the assembly code for each program. 
+At face value, it's hard to see a problem. The programs seem almost identical with just slightly different syntax. But this is why high-level abstractions can be so misleading. We can get a better look into the machine-level by viewing the assembly code for each program.
 
 #### Helloworld.c Assembly
 
