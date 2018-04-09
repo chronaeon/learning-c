@@ -39,7 +39,7 @@ int main()
 }
 ```
 
-#### Helloworld.c Assembly
+### "Hello, World!" in C Assembly
 
 ```
 	.file	"helloworld.c"
@@ -84,7 +84,7 @@ int main()
 }
 ```
 
-#### Helloworld.cpp Assembly
+### "Hello, World!" in C++ Assembly
 
 ```
 	.file	"helloworld.cpp"
