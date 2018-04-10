@@ -1,32 +1,22 @@
-#define MYNAME "Derek Banas"
-
-int global_var = 100;
+int globalVar = 100;
 
 main(){
-	
+
 	char middle_initial;
 
-	printf("What is your middle initial? ");
+	printf("\n");
 
-	scanf(" %c", &middle_initial);
+	int num1 = 12, num2 = 15, numAns;
+	float decimal1 = 1.2, decimal2 = 1.5, decimal_ans;
 
-	printf("What is your middle initial? ");
+	printf("Integer Calculation %d\n\n", num2 / num1);
 
-	char first_name[30], last_name[30];
+	printf("Float Calculation %f\n\n", decimal2 / decimal1);
 
-	printf("What is your name? ");
+	printf("Modulus %d\n\n",num2 % num1);
 
-	scanf(" %s %s", first_name, last_name);
+	printf("Without Parentheses %d\n\n", 3 + 6 * 10);
 
-	printf("Your Name is %s %c %s\n\n", first_name, middle_initial, last_name);
-
-	int month, day, year;
-
-	printf("What's your birth date? ");
-
-	scanf(" %d/%d/%d", &month, &day, &year);
-	
-	printf("\nBirth Date %d/%d/%d\n\n", month, day, year);
-
+	printf("With Parentheses %d\n\n", (3 + 6) * 10);
 
 }

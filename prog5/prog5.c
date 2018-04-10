@@ -1,48 +1,59 @@
-/* Multiline
-Comment */
-
-// Single line comment
-
-#include <stdio.h>
-#include <string.h>
-
-#define MYNAME "Micah Dameron"
+#define MYNAME "Derek Banas"
 
 int global_var = 100;
 
 main(){
-
-	char first_letter = 'M';
-
-	int age = 28;
-
-	long int super_big_num = -327670000;
-
-	float pi_value = 3.14159;
-
-	double really_big_pi = 3.14159314159314159314159;
-
-	printf("\n");
-
-	printf("This will print to screen\n\n");
-
-	printf("I am %d years old\n\n", age);
-
-	printf("Big Number %ld\n\n", super_big_num);
-
-	printf("Pi = %.5f\n\n", pi_value);
 	
-	printf("Pi = %.15f\n\n", really_big_pi); // This one estimates the 15th digit by rounding up.
-	printf("The first letter in my name is %c\n\n", first_letter);
+	char middle_initial;
 
-	printf("My Name is %s\n\n", "Micah");
+	printf("What is your middle initial? ");
 
-	char my_name[14] = "Micah Dameron";
+	scanf(" %c", &middle_initial);
 
-	printf("My Name is %s\n\n", my_name);
+	printf("What is your middle initial? ");
 
-	strcpy(my_name, "MD");
+	char first_name[30], last_name[30];
 
-	printf("My Name is %s\n\n", my_name);
+	printf("What is your name? ");
+
+	scanf(" %s %s", first_name, last_name);
+
+	printf("Your Name is %s %c %s\n\n", first_name, middle_initial, last_name);
+
+	int month, day, year;
+
+	printf("What's your birth date? ");
+
+	scanf(" %d/%d/%d", &month, &day, &year);
+	
+	printf("\nBirth Date %d/%d/%d\n\n", month, day, year);
+
+
 }
-// A variable is a box in memory that's going to allow you to save all your data.
+#include <stdio.h>
+int main()
+{
+    int rows, coef = 1, space, i, j;
+
+    printf("Enter number of rows: ");
+    scanf("%d",&rows);
+
+    for(i=0; i<rows; i++)
+    {
+        for(space=1; space <= rows-i; space++)
+            printf("  ");
+
+        for(j=0; j <= i; j++)
+        {
+            if (j==0 || i==0)
+                coef = 1;
+            else
+                coef = coef*(i-j+1)/j;
+
+            printf("%4d", coef);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
