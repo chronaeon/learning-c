@@ -1,0 +1,1 @@
+This directory is for reference only. It contains reference data that is not distributed as a  component part of the original software and is under the GNU/GPL license. Users building the cthereum binaries will need to refer to the respective header files associated with their local C compiler for accurate reference data.
