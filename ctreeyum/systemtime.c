@@ -1,4 +1,4 @@
-/*This file should return raw UNIX epoch seconds. The way it's coded right now, it returns the full date.*/
+/*This file should return raw UNIX epoch seconds. The way it's coded right now, it returns the full date. Removing this conversion will speed processing for block synchronization.*/
 #include <stdio.h>
 #include <time.h>
 
