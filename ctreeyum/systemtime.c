@@ -1,3 +1,4 @@
+/*This file should return raw UNIX epoch seconds. The way it's coded right now, it returns the full date.*/
 #include <stdio.h>
 #include <time.h>
 
