@@ -1,0 +1,9 @@
+You have a compiled binary at the end. Does it do exactly what it's supposed to:
+a) as fast as possible
+b) without error
+c) without using more memory, cpu, or other resources than necessary
+how many security faults stem from a lack of diligence on the above three metrics? how many security faults are solved by fixing them? how many security faults are left in any program once these three are eliminated?
+
+If people had this kind of diligence with all software they wrote, there would never be room for language wars because no matter what you wrote it in you can be sure your compiled binary is optimal. My problem with safety rails in languages is not that they exist, but when they stop you from seeing or thinking otherwise than you naturally would because someone other than yourself values their safety above your detailed knowledge of your program.
+
+If people had this kind of diligence with all software they wrote, there would never be room for language wars because no matter what you wrote it in you can be sure your compiled binary is optimal. My problem with safety rails in languages is not that they exist, but when they stop you from seeing or thinking otherwise than you naturally would  because someone other than yourself values their safety above your detailed knowledge of your program.
