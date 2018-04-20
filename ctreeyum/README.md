@@ -29,3 +29,21 @@ Once that step is ascertained in C code, optimizations to public Ethereum should
 ---
 
 1. Another method would be to have a webserver that updates every epoch.
+
+
+---
+
+## Problems with Ethereum
+
+There are a variety of oversights  and problems that create optimization issues for Ethereum. Most of these can be recognized and solutions proposed by taking a long look  at the history of software development and seeing where Ethereum falls short.
+
+Problems:
+
+1. Big-Endian instead of Little-Endian
+2. Stack-Based instead of Memory Registry
+	1. Operations can be processed and output from people's computers, that's the "work" and consensus is formed by mean average on operational results. The closer to the mean results are, the more rewards someone gets.
+3. Proof-of-work loosely connected to transactions instead of tightly coupled
+4. Single currency with legacy incentive system instead of a trilinear currency with one recursive and one proactive incentive per coin, that is with three total coins. Reward is generic and based on accuracy of end computation, and speed of computations, and number of computations performed. Reward can be no higher than one standard deviation above the mean, regardless of speed (this keeps people with extremely fast connections from taking all of the computation.)
+5. Blocks and smart contracts are not properly incentivized. Transactions come with bounties, and the chain curators own the bounties when they include transactions in blocks. Nothing needs to be mined. Transactions are assigned to 33 nodes by a chaotic randomization function that produces chaotic behavior based on three deterministic inputs. 
+6. Every peer sends one datagram per second to three other peers. Every connected peer receives three datagrams per second from other peers. Datagrams contain an integer between 1 and 1024. This means peer connections use 3kb upload bandwidth and 3kb download bandwidth per second. 
+7. The first number received from a peer per cpu clock cycle is multiplied by the second number received per cpu clock cycle and divided by the third number, producing a chaotic output whose domain has a max range of 1,048,576 and a min range of .0009765. In cases where a decimal output is produced 
