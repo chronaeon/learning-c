@@ -9,7 +9,7 @@ main()
 
 	lower = 0; 	/* lower limit of temperature table */
 	upper = 9000000000000;    /* upper limit */
-	step = 500;	/* step size */
+	step = 501;	/* step size */
 
 	celsius = lower;
 	printf("Celsius to Farenheit Conversion Table by Steps of 20 Degrees\n");
