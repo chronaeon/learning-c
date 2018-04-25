@@ -1,5 +1,5 @@
 # Learning C
-I've decided to become a C developer, because C most fits the needs I have for programs I'd like to write.
+I'm becoming a C developer because C most fits the needs I have for programs I'd like to write.
 
 ## Maxims
 
